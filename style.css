@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+}
+
+h1,
+#about h3,
+#FAQ h2,
+#contato .container>p {
+    font-family: 'Coiny', cursive;
+    font-weight: 400;
+}
+
+h2 {
+    color: #B756FF;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #151515;
+    color: #FFF;
+}
+
+#home p,
+#about p {
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.container {
+    width: 75%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li a {
+    color: #FFF;
+    margin-left: 40px;
+}
+
+header nav li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#home .container {
+    position: relative;
+    display: flex;
+    height: 490px;
+}
+
+#home .container div {
+    position: relative;
+}
+
+#home .text-home {
+    max-width: 470px;
+    z-index: 5;
+    align-self: center;
+}
+
+#home h1 {
+    font-size: 80px;
+}
+
+#home img#banner-img {
+    width: 826px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    box-shadow: 25px 25px 80px 6px rgba(198, 7, 194, 0.2);
+}
+
+#home img#rosquinha1,
+#home img#rosquinha2,
+#home img#rosquinha3 {
+    position: absolute;
+    z-index: 1;
+}
+
+#home img#rosquinha1 {
+    top: -100px;
+    right: -90px;
+}
+
+#home img#rosquinha2 {
+    bottom: -80px;
+    right: 750px;
+}
+
+#home img#rosquinha3 {
+    bottom: -58px;
+    right: -61px;
+}
+
+#about .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about h3 {
+    font-size: 54px;
+    font-weight: 400;
+}
+
+#about button,
+#contato button {
+    border-radius: 100px;
+    padding: 16px 32px;
+    height: fit-content;
+    cursor: pointer;
+    background: transparent;
+    color: #FFF;
+    border: 3px solid #B756FF;
+    transition: color, background .5s ease-in-out;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#about button:hover,
+#contato button:hover {
+    background: #FFF;
+    color: #B756FF;
+}
+
+#about p {
+    max-width: 70%;
+}
+
+#galeria .container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#galeria img {
+    max-width: 30%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    transition: transform .2s ease;
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+}
+
+#FAQ {
+    background: #FFF;
+    color: #151515;
+}
+
+#FAQ h2 {
+    margin-bottom: 60px;
+}
+
+#FAQ .card {
+    width: 100%;
+    padding: 40px 52px;
+    border: 1px solid rgba(21, 21, 21, 0.25);
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-bottom: 40px;
+}
+
+#FAQ .card:last-child {
+    margin-bottom: 0;
+}
+
+#FAQ h3 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#contato .container h2,
+#contato .container>p {
+    text-align: center;
+}
+
+#contato h2 {
+    margin-bottom: 10px;
+}
+
+#contato .container>p {
+    margin-bottom: 40px;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+#contato .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contato .row .col-50 {
+    width: 50%;
+}
+
+#contato address {
+    font-style: normal;
+}
+
+#contato address h3 {
+    font-size: 32px;
+}
+
+#contato address p {
+    color: #A1A1A1;
+}
+
+#contato address a {
+    margin-bottom: 40px;
+    display: block;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#contato address a:first-of-type {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#contato form input,
+#contato form textarea {
+    border: 1px solid #A1A1A1;
+    background-color: transparent;
+    padding: 16px 0 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    color: #fff;
+}
+
+#contato form div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contato form input {
+    width: 49%;
+}
+
+#contato form input:focus,
+#contato form textarea:focus {
+    color: #fff;
+}
+
+#contato form textarea {
+    width: 100%;
+    resize: none;
+    height: 120px;
+}
+
+#contato button {
+    float: right;
+}
+
+footer {
+    padding-bottom: 30px;
+}
+
+footer,
+footer a {
+    color: #A1A1A1;
+}
+
+footer p {
+    font-weight: 600;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+}
